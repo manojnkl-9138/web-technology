@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShowOnWheels - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    marquee {
+      background-color: rgb(2, 2, 2);
+      color: #fffacd;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .menu-details {
+      margin: 30px;
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      width: fit-content;
+    }
+
+    .menu-details summary {
+      cursor: pointer;
+      font-size: 20px;
+      background-color: rgb(3, 3, 3);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+    }
+
+    .menu-details a {
+      display: block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .menu-details a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .content {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      color: rgb(14, 17, 14);
+      margin-bottom: 30px;
+    }
+
+    .poster-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .poster-img {
+      width: 250px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    details {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+
+    article p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    aside {
+      font-size: 18px;
+      color: darkgreen;
+      margin: 25px 0;
+    }
+
+    video {
+      display: block;
+      margin: 30px auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Marquee -->
+  <marquee behavior="scroll" direction="left">
+    Book your favorite movie tickets with ShowOnWheels! Get discounts this weekend!
+  </marquee>
+
+  <!-- ✅ Menu Dropdown -->
+  <details class="menu-details">
+    <summary>☰ Menu</summary>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Movies</a>
+    <a href="#">Contact</a>
+  </details>
+
+  <!-- ✅ Main Content -->
+  <div class="content">
+
+    <!-- ✅ Currently Showing -->
+    <div class="section-title">Now Showing</div>
+    <div class="poster-container">
+      <img src="coolie.jpeg" class="poster-img" alt="Movie 1">
+      <img src="kindom.jpeg" class="poster-img" alt="Movie 2">
+      <img src="Retro.jpeg" class="poster-img" alt="Movie 3">
+    </div>
+
+    <!-- ✅ Operating Locations -->
+    <details>
+      <summary><b>Our Locations</b></summary>
+      <ul>
+        <li>Los Angeles</li>
+        <li>Chicago</li>
+        <li>Houston</li>
+      </ul>
+      <p>We are expanding to more cities soon. Stay tuned!</p>
+    </details>
+
+    <!-- ✅ Customer Note -->
+    <aside>
+      We value your time and convenience. Enjoy smooth bookings with us.
+    </aside>
+
+    <!-- ✅ About -->
+    <article>
+      <p>ShowOnWheels offers fast and easy movie ticket booking from your phone or desktop. Avoid queues and book anytime, anywhere.</p>
+    </article>
+
+    <!-- ✅ Promo Video -->
+    <div class="section-title">Special Offers</div>
+    <video width="500" height="300" controls autoplay muted loop>
+      <source src="videoplayback.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+</body>
+</html>
